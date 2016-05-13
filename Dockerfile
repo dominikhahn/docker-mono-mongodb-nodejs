@@ -16,7 +16,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927 && \
 
 ### Install NodeJS/NPM
 RUN curl -sL https://deb.nodesource.com/setup | bash - && \
-    apt-get install -yqq nodejs
+    apt-get install -yqq nodejs build-essential
 
 # Executing defaults
 CMD [ "/bin/bash" ]
